@@ -9,6 +9,7 @@ public:
     {
         this->data = data;
         this->next = NULL;
+
     }
 };
 Node* head = NULL;
