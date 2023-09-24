@@ -6,7 +6,8 @@ vector<vector<int> > memo;
 int capacity,n;
 int knapsack_recursive(int i,int capacity)
 {
-  if(i==n||capacity==0){
+  if(i==n||capacity==0)
+  {
     return 0;
   }
   if(weights[i]>capacity){
