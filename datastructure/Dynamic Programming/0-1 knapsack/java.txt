@@ -1,0 +1,28 @@
+public class Circle implements Shape {
+    private double radius;
+
+    // Constructor for Circle class
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
+    // Implementation of the getArea() method
+    @Override
+    public void getArea() {
+        double area = Math.PI * radius * radius;
+        System.out.println("Area of the circle: " + area);
+    }
+
+    // Implementation of the display() method
+    @Override
+    public void display() {
+        System.out.println("Displaying circle");
+    }
+
+    public static void main(String[] args) {
+        // Example of using the Circle class
+        Circle circle = new Circle(5.0);
+        circle.getArea();
+        circle.display();
+    }
+}
